@@ -7,13 +7,16 @@ sudo dd if=FreeBSD-14.0-CURRENT-amd64-20230706-884eaacd24bd-263985-memstick.img 
 Kör installer och gör rätt val ;D
 
 ### Logga in som root första booten och installera:
+```
 pkg install nano
 pkg install xorg
 pkg install kde5
 pkg install kdevelop
 pkg install sddm
 pkg install git firefox
+```
 sysrc dbus_enable=yes
+
 sysrc sddm_enable=yes
 
 nano /etc/sysctl.conf
