@@ -17,8 +17,9 @@ sysrc dbus_enable=yes
 sysrc sddm_enable=yes
 
 nano /etc/sysctl.conf
->net.local.stream.recvspace=65536
->net.local.stream.sendspace=65536
+Lägg till
+* net.local.stream.recvspace=65536
+* net.local.stream.sendspace=65536
 
 ### Installera GPU-drivar
 
