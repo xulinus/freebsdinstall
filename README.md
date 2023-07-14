@@ -14,24 +14,21 @@ pkg install kde5
 pkg install kdevelop
 pkg install sddm
 pkg install git firefox
-```
+
 sysrc dbus_enable=yes
-
 sysrc sddm_enable=yes
+```
 
-nano /etc/sysctl.conf
-Lägg till
+nano /etc/sysctl.conf och lägg till:
 * net.local.stream.recvspace=65536
 * net.local.stream.sendspace=65536
 
 ### Installera GPU-drivar
 
-\#https://docs.freebsd.org/en/books/handbook/cutting-edge/#updating-src-obtaining-src
-
+https://docs.freebsd.org/en/books/handbook/cutting-edge/#updating-src-obtaining-src
+```
 uname -r
-
 git clone --branch ?? https://git.freebsd.org/src.git /usr/src
-
 git clone https://git.FreeBSD.org/ports.git /usr/ports
 
 cd /usr/ports/graphics/drm-510-kmod
@@ -45,8 +42,8 @@ make install clean FLAVOR=navy_flounder # Radeon RX 6750 XT
 kldload amdgpu
 
 sysrc kld_list+=amdgpu
-
-\# starta om och boota in i sddm/kde
+```
+starta om och boota in i sddm/kde ;D
 
 -------------
 Video på install: https://www.youtube.com/watch?v=0qq3H8pflU0
