@@ -47,5 +47,7 @@ starta om och boota in i sddm/kde ;D
 
 -------------
 Video på install: https://www.youtube.com/watch?v=0qq3H8pflU0
+
 Instruktion GPU: https://xyinn.org/md/freebsd/amd_radeon_6900_xt
+
 Ports: https://docs.freebsd.org/en/books/handbook/ports/#ports-using-git-method
