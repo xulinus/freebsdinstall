@@ -24,7 +24,9 @@ Lägg till
 ### Installera GPU-drivar
 
 \#https://docs.freebsd.org/en/books/handbook/cutting-edge/#updating-src-obtaining-src
+
 uname -r
+
 git clone --branch ?? https://git.freebsd.org/src.git /usr/src
 
 git clone https://git.FreeBSD.org/ports.git /usr/ports
